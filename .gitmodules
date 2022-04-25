@@ -3,7 +3,7 @@
 	url = https://github.com/gnif/LookingGlass
 [submodule "sources/qemu"]
 	path = sources/qemu
-	url = https://gitlab.com/qemu-project/qemu.git
+	url = https://github.com/qemu/qemu
 [submodule "sources/linux-tkg-actions"]
 	path = sources/linux-tkg-actions
 	url = https://github.com/hurrhnn/linux-tkg-actions
