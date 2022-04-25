@@ -1,4 +1,9 @@
+If your guest OS is Windows,
+
 https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/
 
 download the latest virtio-win driver if possible, and install the virtio-win driver in guest OS.
 
+If your guest OS is Linux,
+
+install the `qemu-guest-agent` from the package manager for each OS.
