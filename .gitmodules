@@ -1,0 +1,9 @@
+[submodule "sources/LookingGlass"]
+	path = sources/LookingGlass
+	url = https://github.com/gnif/LookingGlass
+[submodule "sources/qemu"]
+	path = sources/qemu
+	url = https://gitlab.com/qemu-project/qemu.git
+[submodule "sources/linux-tkg-actions"]
+	path = sources/linux-tkg-actions
+	url = https://github.com/hurrhnn/linux-tkg-actions
