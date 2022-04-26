@@ -39,6 +39,7 @@ The GPU that Nvidia RTX2070 Super Passthrough related files.
 ```bash
 .
 ├── looking-glass-host-B5-312-132d0e3c.zip
+├── MSI_util_v3.zip
 └── README
 ```
 <br>
@@ -54,9 +55,9 @@ The GPU that Nvidia RTX2070 Super Passthrough related files.
 `sources/`
 ```bash
 .
-├── linux-tkg-actions
-├── LookingGlass
-└── qemu
+├── linux-tkg-actions/
+├── LookingGlass/
+└── qemu/
 ```
 
 
