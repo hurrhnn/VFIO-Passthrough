@@ -25,6 +25,7 @@
     <loader readonly='yes' type='pflash'>/usr/share/edk2/ovmf/OVMF_CODE.fd</loader>
     <nvram>/var/lib/libvirt/qemu/nvram/Main_OS_VARS.fd</nvram>
     <bootmenu enable='yes'/>
+    <smbios mode='host'/>
   </os>
   <features>
     <acpi/>
