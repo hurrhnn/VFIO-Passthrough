@@ -16,11 +16,13 @@ The GPU that Nvidia RTX2070 Super Passthrough related files.
 │   │           └── Main_OS
 │   │               ├── prepare
 │   │               │   └── begin
+│   │               │       ├── alloc_hugepages.sh
 │   │               │       ├── bind_vfio.sh
 │   │               │       ├── cpu_mode_performance.sh
 │   │               │       └── disable-fb.sh
 │   │               └── release
 │   │                   └── end
+│   │                       ├── dealloc_hugepages.sh
 │   │                       ├── cpu_mode_ondemand.sh
 │   │                       └── unbind_vfio.sh
 │   └── X11
