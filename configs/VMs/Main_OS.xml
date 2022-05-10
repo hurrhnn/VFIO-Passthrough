@@ -8,7 +8,10 @@
   </metadata>
   <memory unit="KiB">16777216</memory>
   <currentMemory unit="KiB">16777216</currentMemory>
-  <vcpu placement="static">6</vcpu>
+  <memoryBacking>
+    <hugepages/>
+  </memoryBacking>
+  <vcpu placement="static">8</vcpu>
   <iothreads>6</iothreads>
   <cputune>
     <vcpupin vcpu="0" cpuset="0"/>
@@ -17,6 +20,8 @@
     <vcpupin vcpu="3" cpuset="3"/>
     <vcpupin vcpu="4" cpuset="4"/>
     <vcpupin vcpu="5" cpuset="5"/>
+    <vcpupin vcpu="6" cpuset="6"/>
+    <vcpupin vcpu="7" cpuset="7"/>
     <emulatorpin cpuset="6-7"/>
     <iothreadpin iothread="1" cpuset="6-7"/>
     <iothreadpin iothread="2" cpuset="6-7"/>
@@ -53,7 +58,7 @@
     <ioapic driver="kvm"/>
   </features>
   <cpu mode="host-passthrough" check="none" migratable="on">
-    <topology sockets="1" dies="1" cores="6" threads="1"/>
+    <topology sockets="1" dies="1" cores="8" threads="1"/>
     <cache mode="passthrough"/>
     <feature policy="require" name="ss"/>
     <feature policy="require" name="tsc_adjust"/>
@@ -241,8 +246,8 @@
     </hostdev>
     <hostdev mode="subsystem" type="usb" managed="yes">
       <source>
-        <vendor id="0x093a"/>
-        <product id="0x2510"/>
+        <vendor id="0x04e8"/>
+        <product id="0x685d"/>
       </source>
       <address type="usb" bus="0" port="2"/>
     </hostdev>
