@@ -5,35 +5,39 @@ The GPU that Nvidia RTX2070 Super Passthrough related files.
 `configs/`
 ```bash
 .
-├── etc
-│   ├── default
-│   │   └── grub
-│   ├── libvirt
-│   │   └── hooks
-│   │       ├── kvm.conf
-│   │       ├── qemu
-│   │       └── qemu.d
-│   │           └── Main_OS
-│   │               ├── prepare
-│   │               │   └── begin
-│   │               │       ├── alloc_hugepages.sh
-│   │               │       ├── bind_vfio.sh
-│   │               │       ├── cpu_mode_performance.sh
-│   │               │       └── disable-fb.sh
-│   │               └── release
-│   │                   └── end
-│   │                       ├── dealloc_hugepages.sh
-│   │                       ├── cpu_mode_ondemand.sh
-│   │                       └── unbind_vfio.sh
-│   └── X11
-│       └── xorg.conf
-├── virsh
-│   └── bridged-network.xml
-└── VMs
-    ├── Main_OS_VARS.fd
-    ├── Main_OS.xml
-    ├── OVMF_CODE.fd
-    └── TU104.rom
+├── VMs
+│   ├── Main_OS_VARS.fd
+│   ├── OVMF_CODE.fd
+│   └── TU104.rom
+└── etc
+    ├── X11
+    │   └── xorg.conf
+    ├── default
+    │   └── grub
+    ├── libvirt
+    │   ├── hooks
+    │   │   ├── kvm.conf
+    │   │   ├── qemu
+    │   │   └── qemu.d
+    │   │       └── Main_OS
+    │   │           ├── prepare
+    │   │           │   └── begin
+    │   │           │       ├── alloc_hugepages.sh
+    │   │           │       ├── bind_vfio.sh
+    │   │           │       ├── cpu_mode_performance.sh
+    │   │           │       └── disable-fb.sh
+    │   │           └── release
+    │   │               └── end
+    │   │                   ├── cpu_mode_ondemand.sh
+    │   │                   ├── dealloc_hugepages.sh
+    │   │                   └── unbind_vfio.sh
+    │   └── qemu
+    │       ├── Main_OS.xml
+    │       └── networks
+    │           ├── bridged-network.xml
+    │           └── defaults.xml
+    └── qemu
+        └── bridge.conf
 ```
 <br>
 
