@@ -1,8 +1,6 @@
+GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
-GRUB_DEFAULT=saved
-GRUB_DISABLE_SUBMENU=true
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX="rhgb intel_iommu=on intel_iommu=pt rd.driver.pre=vfio-pci vfio-pci.ids=10de:10f8,10de:1e84,10de:1ad8,10de:1ad9 pcie_acs_override=downstream kvm.ignore_msrs=1 kvm.report_ignored_msrs=0"
+GRUB_CMDLINE_LINUX="rhgb intel_iommu=on intel_iommu=pt rd.driver.pre=vfio-pci vfio-pci.ids=10de:10f8,10de:1e84,10de:1ad8,10de:1ad9 pcie_acs_override=downstream kvm.ignore_msrs=1 kvm.report_ignored_msrs=0 rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1"
 GRUB_DISABLE_RECOVERY="true"
-GRUB_ENABLE_BLSCFG=true
